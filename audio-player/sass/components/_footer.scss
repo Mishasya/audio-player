@@ -1,0 +1,36 @@
+.footer {
+  padding: 25px 0;
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+
+  &__list {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list-text {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--color-black);
+    vertical-align: middle;
+  }
+
+  .list {
+
+    &__link {
+      display: block;
+      transition: transform var(--transition-delay), opacity var(--transition-delay);
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
+}

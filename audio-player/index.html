@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My audio player</title>
+</head>
+<body class="body">
+  <img class="body__background" src="assets/img/poster-acdc.jpg" alt="Poster">
+  <header class="header">
+    <h1 class="visually-hidden">Custom audio player by Mishasya</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="player">
+        <img class="player__img" src="assets/img/acdc-img.jpg" width="320" height="480" alt="Artist photo">
+        <div class="player__inner">
+          <audio class="audio" src="assets/audio/AC DC - Thunderstruck.mp3"></audio>
+          <div class="player__btn-inner">
+            <button class="player__btn player__btn--prev btn" aria-label="Previosly song"></button>
+            <button class="player__btn player__btn--play btn" aria-label="play"></button>
+            <button class="player__btn player__btn--next btn" aria-label="Next song"></button>
+          </div>
+          <h2 class="player__name">AC / DC</h2>
+          <h3 class="player__title">Thunderstruck</h3>
+          <div class="player__time-inner">
+            <span class="player__current-time">00 : 00</span>
+            <span class="player__duration">04 : 52</span>
+          </div>
+          <div class="controls">
+            <input class="controls__input" type="range" min="0" max="600" value="0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="list footer__list">
+        <li class="footer__list-item">
+          <a class="list__link" href="https://github.com/Mishasya" aria-label="Go to the GitHub">
+            <img src="assets/img/logo-github.svg" width="60" height="60" alt="Logo github">
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <span class="footer__list-text">2022</span>
+        </li>
+        <li class="footer__list-item">
+          <a class="list__link" href="https://rs.school/js/" aria-label="Go to the course page on JavaScript RS School">
+            <img src="assets/img/rs-school-js.svg" width="120" height="45" alt="Logo RS School">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

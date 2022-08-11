@@ -1,0 +1,43 @@
+.controls {
+  width: 100%;
+  max-width: 300px;
+
+  &__input {
+    margin: auto;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    max-width: 330px;
+    height: 2px;
+    background-color: #dedede;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff1100), color-stop(100%, #ff1100));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  &__input::-webkit-slider-thumb {
+    height: 12px;
+    width: 16px;
+    border: 0;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 12px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    -webkit-appearance: none;
+  }
+
+  &__input::-moz-range-thumb {
+    height: 12px;
+    width: 16px;
+    border: 0;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 12px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    -webkit-appearance: none;
+  }
+}
